@@ -1,0 +1,256 @@
+.team {
+  color: #deae45;
+  font-size: 2vw;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: -2vw;
+}
+
+.head {
+  margin-left: -87%;
+  top: 10%;
+  font-size: 1.5vw;
+}
+
+/* the small orange box under the picture */
+.after {
+  width: 100%;
+  height: 2px;
+  background-color: #deae45;
+  margin-top: -2%;
+}
+
+/* horinzonal line */
+.horizontal {
+  width: 15%;
+  height: 1px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: #0c2e8a;
+  margin-bottom: 10vw !important;
+}
+
+/* the flex container in which the trainers cards are housed */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 px;
+  color: #ece2b5;
+}
+
+/* positioning the h1 in the div */
+.flex h1 {
+  position: absolute;
+  top: 60%;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  color: #ece2b5;
+  z-index: 1;
+}
+
+.flex h2 {
+  position: absolute;
+  top: 60%;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  color: #ece2b5;
+  z-index: 1;
+}
+/* the trainer cards alignment */
+.card {
+  position: relative;
+  height: 100%;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px 0 #deae45, 0 6px 20px 0 #deae45;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+}
+
+/* change the font-size and text color of the h1 in the trainer cards when hovered */
+.card:hover h1 {
+  color: whitesmoke;
+  font-size: 2.5vw;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover h2 {
+  color: whitesmoke;
+  font-size: 1.5vw;
+  transition: all 0.5s ease-in-out;
+}
+/* overlay over the image cards when hovered */
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.082) 60%,
+    rgba(83, 98, 126, 0.747)
+  );
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1px;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* hide the details on the trainer cards */
+.hidden {
+  visibility: hidden;
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* display the details on the trainer cards when hovered */
+.card:hover .hidden {
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(177, 22, 22, 0.945);
+  z-index: 3 !important;
+}
+
+.hidden p {
+  position: absolute;
+  color: white;
+}
+
+/* accurately position the icons in the trainer cards when hovered */
+.icon {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.icon i {
+  color: whitesmoke;
+  font-size: 2vw;
+}
+
+.desktop__nav {
+  height: 14.688rem !important;
+}
+
+/* full picture of the main div on landscape orientation for responsiveness */
+@media only screen and (orientation: landscape) {
+  .team_main {
+    height: 50vw;
+  }
+}
+
+/* Responsiveness for mobile view */
+@media only screen and (max-width: 576px) {
+  /* hero image responsive for small screen */
+  .team_main {
+    width: 100%;
+    height: 60vw;
+  }
+
+  .team_main h1 {
+    font-size: 4.7vw;
+    top: 25%;
+  }
+
+  .team_main p {
+    width: 50vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.5px;
+    top: 30% !important;
+  }
+
+  /* "OUR trainers text" */
+  .train {
+    font-size: 5vw;
+  }
+
+  /* the trainers cards in stacked in columns on mobile */
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex h1 {
+    font-size: 6vw;
+  }
+
+  .flex .card {
+    width: 100% !important;
+  }
+
+  .card:hover h1 {
+    color: whitesmoke;
+    font-size: 5.5vw;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* smaller text on mobile */
+  .hidden p {
+    font-size: 3.2vw;
+  }
+
+  .icon i {
+    color: whitesmoke;
+    font-size: 4vw;
+  }
+}
+
+.team_main {
+  /*the hero div */
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.082) 60%,
+      rgba(92, 84, 110, 0.7)
+    ),
+    url('#');
+  background-size: 100% 25%;
+  background-repeat: no-repeat;
+  padding: 10vw 5vw;
+}
+
+.team_main h1 {
+  font-weight: bold;
+  font-size: 5vw;
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  color: #deae45;
+}
+
+.team_main p {
+  width: 53vw;
+  font-size: 1.4vw;
+  position: absolute;
+  top: 40%;
+}
+
+.after {
+  width: 100%;
+  height: 2px;
+  background-color: #deae45;
+  margin-top: -2%;
+}

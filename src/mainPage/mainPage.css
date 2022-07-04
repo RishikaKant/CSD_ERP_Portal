@@ -1,6 +1,245 @@
-.MainPage{
-    margin: 0;
-    padding: 1% 0;
-    background-color: black;
-    color: aliceblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Monteserrat Classic';
+}
+
+#MainPage {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  gap: 5%;
+  padding: 0 120px;
+}
+
+.header > a > i {
+  color: #edc773;
+  font-size: 20px;
+  padding-right: 6px;
+}
+
+.header > a {
+  text-decoration: none;
+  color: #edc773;
+}
+
+.line {
+  border-top: 5px solid #edc773;
+  opacity: 1 !important;
+}
+
+.logo {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+}
+
+.Heading {
+  color: #edc773;
+  font-size: 45px;
+  font-weight: 700;
+  font-family: 'Monteserrat Classic';
+  padding: 8px;
+}
+
+.navbar-nav {
+  padding-left: 30%;
+}
+
+.nav-item {
+  font-size: 17px;
+}
+
+.nav-item > a {
+  color: #ffffff;
+}
+
+.nav-item > a :hover {
+  background-color: #edc773;
+}
+
+.main {
+  display: block;
+  object-fit: cover;
+}
+
+/* .carousel {
+  height: 75vh;
+} */
+
+.carousel-item > img {
+  height: 75vh;
+  opacity: 0.5;
+}
+
+.typewriter h1 {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 15%;
+  color: #edc773;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.17em solid pink; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.17em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: pink;
+  }
+}
+
+/* .flex-r,
+.flex-c {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.flex-c {
+  flex-direction: column;
+}
+.flex-r {
+  flex-direction: row;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 10px;
+  background: #e5e5e5;
+}
+
+.login-text {
+  background-color: #f6f6f6;
+  max-width: 500px;
+  min-height: 450px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+.logo span,
+.logo span i {
+  font-size: 25px;
+  color: #edc773;
+}
+
+.login-text h1 {
+  font-size: 25px;
+}
+.login-text p {
+  font-size: 15px;
+  color: #000000b2;
+}
+
+form {
+  align-items: flex-start !important;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.input-box {
+  margin: 10px 0px;
+  width: 100%;
+}
+.label {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 3px;
+}
+.input {
+  background-color: #f6f6f6;
+  padding: 0px 5px;
+  border: 2px solid rgba(216, 216, 216, 1);
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: #f6f6f6;
+  flex: 1;
+}
+.input i {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.check span {
+  color: #000000b2;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.btn {
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 15px;
+  background: linear-gradient(122.33deg, #e3e6a1 30.62%, #edc773 100%);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+.extra-line {
+  font-size: 15px;
+  font-weight: 600;
+}
+.extra-line a {
+  color: #edc773;
+} */
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  gap: 5%;
+  padding: 0 120px;
+}
+
+.socials > a > i {
+  color: #edc773;
+  font-size: 28px;
+}
+.copyright {
+  color: #edc773;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38%;
+  padding-bottom: 15px;
 }

@@ -1,0 +1,43 @@
+/* .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 0.5em 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type='submit'] {
+  margin: 15px 0px;
+  background-color: #edc773;
+  color: #fff;
+}
+.btn {
+  width: 150px;
+  background-color: #edc773;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+} */
